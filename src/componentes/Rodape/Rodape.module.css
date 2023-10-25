@@ -1,0 +1,52 @@
+.rodape {
+    width: 100%;
+    background: var(--vermelho-02);
+    padding-top: 50px;
+}
+
+.rodape_conteudo {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.rodape_nav_titulo {
+    font-family: var(--montserrat);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--branco);
+}
+
+.rodape_nav {
+    display: flex;
+    gap: 50px;
+}
+
+.nav_link{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    flex-wrap: wrap;
+    width: 150px;
+}
+
+.rodape_logo {
+    width: 200px;
+}
+
+.credito_rodape {
+    background: var(--cinza);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+
+.copy_img {
+    width: 9px;
+}
+
+.credito_texto {
+    font-size: 0.8rem;
+}
+

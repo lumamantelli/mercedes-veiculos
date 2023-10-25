@@ -1,0 +1,17 @@
+.link_menu_suspenso {
+    text-decoration: none;
+    color: var(--preto);
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 0.9rem;
+}
+
+.link_menu_suspenso > span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.link_menu_suspenso:hover {
+    background: var(--branco);
+}

@@ -1,0 +1,11 @@
+.link {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: var(--preto);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.link:hover {
+    border-bottom: solid 2px var(--vermelho);
+}
