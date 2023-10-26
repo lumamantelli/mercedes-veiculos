@@ -1,0 +1,60 @@
+.card_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.card {
+    background: var(--cinza);
+    border-radius: 26px;
+    height: 390px;
+    width: 265px;
+}
+
+.preco_btn-mais {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_informacoes {
+    display: flex;
+    flex-direction: column;
+    height: 109px;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+
+.btn_mais {
+    align-items: center;
+    background: var(--cinza-escuro);
+    border-radius: 100%;
+    color: var(--branco);
+    display: flex;
+    font-size: 3rem;
+    font-weight: 600;
+    height: 45px;
+    justify-content: center;
+    width: 45px;
+}
+
+.card_foto{
+    border-radius: 26px;
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.active{
+    display: block;
+}
+
+.ver_mais {
+    align-items: center;
+    display: flex;
+    gap:  10px;
+}
+

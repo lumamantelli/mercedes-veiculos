@@ -1,29 +1,29 @@
 .barra_container {
+    bottom: 60px;
     display: flex;
     justify-content: center;
     position: relative;
-    bottom: 60px;
 }
 
 .barra_de_pesquisa {
-    width: 50%;
-    height: 80px;
+    align-items: center;
     background: var(--branco);
     border-radius: 20px;
     box-shadow: 1px 10px 12px -10px var(--preto);
     display: flex;
-    align-items: center;
-    padding: 0 30px;
+    height: 80px;
     justify-content: space-between;
+    padding: 0 10px;
+    width: 80%;
 }
 
 .barra_input {
-    border: none;
     background: transparent;
+    border: none;
     font-family: var(--montserrat);
-    width: 100%;
+    font-size: 1rem;
     height: 50%;
-    font-size: 1.2rem;
+    width: 100%;
 }
 
 .barra_input:focus {
@@ -31,18 +31,25 @@
 }
 
 button {
-    border: none;
     background: transparent;
+    border: none;
     cursor: pointer;
     
 }
 
 .lupa_pesquisar {
-    width: 35px;
+    width: 25px;
 }
 
 .lupa_pesquisar:hover {
-    transition: 0.7s;
     transform: scale(0.8);
+    transition: 0.7s;
 
+}
+
+@media screen and (min-width: 430px) {
+    .barra_de_pesquisa{
+        width: 50%;
+        padding: 0 30px;
+    }
 }

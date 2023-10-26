@@ -11,7 +11,7 @@ function MenuSuspenso() {
     const menuSuspensoRef = useRef(null);
     const [isActive, setIsActive] = useState(false)
     const onClick = () => setIsActive(!isActive)
-   console.log(isActive)
+   
     return(
         
         <div className="menu_suspenso" >
@@ -27,11 +27,11 @@ function MenuSuspenso() {
                     <img className="logo_menu" src='/imagens/logo.svg' alt='Logo Mercedes Veículos'/>
                 </div>
                 <div className="menu_suspenso_link">
-                    <MenuSuspensoLink>
+                    <MenuSuspensoLink url="./">
                         <img className="icone" src='/imagens/home.svg' alt='Icone Home'/>
                         Home
                     </MenuSuspensoLink>
-                    <MenuSuspensoLink>
+                    <MenuSuspensoLink url="./Contato">
                         <img className="icone" src='/imagens/phone.svg' alt='Icone Phone'/>
                         Contato
                     </MenuSuspensoLink>
@@ -51,11 +51,11 @@ function MenuSuspenso() {
                 
                 <div className="menu_suspenso_link">
                     <p className="titulo_redes_menu">Nossas redes sociais</p>
-                    <MenuSuspensoLink>
+                    <MenuSuspensoLink url="https://instagram.com/david.mercedessouza?igshid=MzRlODBiNWFlZA==">
                         <img className="icone" src='/imagens/instagram.svg' alt='Icone Instagram'/>
                         Instagram
                     </MenuSuspensoLink>
-                    <MenuSuspensoLink>
+                    <MenuSuspensoLink url="https://wa.me/5566996231390?text=Olá, vim do catálogo">
                         <img className="icone" src='/imagens/whatsapp-cinza.svg' alt='Icone Whatsapp'/>
                         Whatsapp
                     </MenuSuspensoLink>

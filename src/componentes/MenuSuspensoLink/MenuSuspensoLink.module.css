@@ -1,14 +1,14 @@
 .link_menu_suspenso {
-    text-decoration: none;
-    color: var(--preto);
-    padding: 10px;
     border-radius: 7px;
+    color: var(--preto);
     font-size: 0.9rem;
+    padding: 10px;
+    text-decoration: none;
 }
 
 .link_menu_suspenso > span {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 5px;
 }
 

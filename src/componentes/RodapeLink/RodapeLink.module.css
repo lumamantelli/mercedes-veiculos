@@ -1,9 +1,9 @@
 .link_rodape {
     color: var(--branco);
     font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
-    font-weight: 400;
     font-size: 0.8rem;
+    font-weight: 400;
+    text-decoration: none;
 }
 
 .link_rodape > span:hover{

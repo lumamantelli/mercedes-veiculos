@@ -1,32 +1,34 @@
 .rodape {
-    width: 100%;
     background: var(--vermelho-02);
     padding-top: 50px;
+    width: 100%;
 }
 
 .rodape_conteudo {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
     padding-bottom: 30px;
 }
 
 .rodape_nav_titulo {
+    color: var(--branco);
     font-family: var(--montserrat);
     font-size: 1.2rem;
     font-weight: 600;
-    color: var(--branco);
 }
 
 .rodape_nav {
     display: flex;
-    gap: 50px;
+    gap: 30px;
 }
 
 .nav_link{
     display: flex;
     flex-direction: column;
-    gap: 7px;
     flex-wrap: wrap;
+    gap: 7px;
     width: 150px;
 }
 
@@ -35,9 +37,9 @@
 }
 
 .credito_rodape {
+    align-items: center;
     background: var(--cinza);
     display: flex;
-    align-items: center;
     gap: 5px;
     justify-content: center;
 }
@@ -48,5 +50,23 @@
 
 .credito_texto {
     font-size: 0.8rem;
+}
+
+@media screen and (max-width: 370px) {
+    .rodape_nav {
+        flex-direction: column;
+    }
+
+    .nav_link {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 430px) {
+    .rodape_conteudo{
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 

@@ -1,9 +1,9 @@
 .link {
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
     color: var(--preto);
-    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
 }
 
 .link:hover {

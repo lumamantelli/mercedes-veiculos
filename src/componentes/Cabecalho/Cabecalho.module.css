@@ -1,23 +1,19 @@
 .cabecalho {
-    display: flex;
-    gap: 35%;
-    padding: 0 0;
-    background: var(--cinza);
     align-items: center;
-    
+    background: var(--cinza);
+    display: flex;
+    padding: 0 0;
 }
 
-
 .nav {
+    align-items: center;
     display: flex;
     gap: 20px;
-    align-items: center;
 }
 
 .logo {
-    width: 100px;
     margin: 10px 30px;
-
+    width: 70px;
 }
 
 .btn_menu {
@@ -33,10 +29,40 @@
     transition: 0.7s;
 }
 
-
-
-
 .menu {
     display: flex;
     justify-content: right;
+}
+
+@media screen and (max-width: 350px) {
+    .nav {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 420px) {
+    .logo{
+        width: 100px;
+    }
+
+    .cabecalho{
+        gap: 3%;
+    }
+    
+}
+
+@media screen and (min-width: 760px) {
+    .cabecalho{
+        gap: 25%;
+    }
+}
+@media screen and (min-width: 1020px) {
+    .cabecalho{
+        gap: 30%;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .cabecalho{
+        gap: 35%;
+    }
 }

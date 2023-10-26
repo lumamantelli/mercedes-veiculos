@@ -1,5 +1,6 @@
 import Contato from "pages/Contato";
 import Home from "./pages/Home";
+import Veiculo from "pages/Veiculo";
 
 const { BrowserRouter, Routes, Route } = require("react-router-dom");
 
@@ -7,8 +8,9 @@ function AppRoutes() {
   return(
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home/>}/>
+        <Route index element={<Home/>}/>
         <Route path="/Contato" element={<Contato/>}/>
+        <Route path=":id" element={<Veiculo/>}/>
       </Routes>
     </BrowserRouter>
   )
