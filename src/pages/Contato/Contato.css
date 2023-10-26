@@ -1,0 +1,10 @@
+.conteudo_contatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icone_contatos {
+    width: 50px;
+
+}
