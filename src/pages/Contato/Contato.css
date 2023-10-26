@@ -40,6 +40,20 @@
     width: 90%;
 }
 
+.btn_enviar_form {
+    background: var(--vermelho);
+    border-radius: 6px;
+    color: var(--branco);
+    font-family: var(--montserrat);
+    font-weight: 600;
+    height: 30px;
+    width: 70px;
+}
+
+.btn_enviar_form:active{
+    transform: scale(0.9);
+}
+
 .titulo_contatos{
     text-align: center;
 }

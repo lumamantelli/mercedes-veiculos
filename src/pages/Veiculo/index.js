@@ -5,6 +5,7 @@ import MenuSuspenso from "componentes/MenuSuspenso"
 import Cabecalho from "componentes/Cabecalho"
 import Conteudo from "componentes/Conteudo"
 import Rodape from "componentes/Rodape"
+import { formatPrice } from "Context/FormatPrice"
 
 
 function Veiculo() {
@@ -30,9 +31,15 @@ function Veiculo() {
             <MenuSuspenso/>
             <Cabecalho/>
             <Conteudo>
-                <div>
-                    <img src={veiculo.imagem} alt={`Foto ${veiculo.nome}`}/>
-                    
+                <div className="veiculo_container">
+                    <img className="veiculo_img" src={veiculo.imagem} alt={`Foto ${veiculo.modelo}`}/>
+                    <div className="veiculo_info">
+                        <h4 className="veiculo_nome">{veiculo.modelo}</h4>
+                        <p className="veiculo_dados">
+                            {veiculo.ano}<br/>
+                            {`${formatPrice(veiculo.preco)}`}
+                        </p>
+                    </div>
                 </div>
             </Conteudo>
             <Rodape/>

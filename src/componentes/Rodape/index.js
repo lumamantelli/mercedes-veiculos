@@ -13,7 +13,7 @@ function Rodape() {
                         <RodapeLink>
                             Quem somos 
                         </RodapeLink>
-                        <RodapeLink url="./Contato">
+                        <RodapeLink url="/Contato">
                             Contato
                         </RodapeLink>
                         <RodapeLink>

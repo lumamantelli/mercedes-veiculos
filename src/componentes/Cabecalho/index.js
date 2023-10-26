@@ -13,10 +13,10 @@ function Cabecalho() {
                     <img className={styles.logo} src='/imagens/logo.svg' alt='Logo Mercedes Veiculos'/>
                 </Link>
                 <nav className={styles.nav}>
-                    <CabecalhoLink url='./'>
+                    <CabecalhoLink url='/'>
                         Início
                     </CabecalhoLink>
-                    <CabecalhoLink url='./Contato'>
+                    <CabecalhoLink url='/Contato'>
                         Contato
                     </CabecalhoLink>
                 </nav>

@@ -27,20 +27,21 @@ function Contato () {
                         <label>
                             Nome
                         </label>
-                        <input type="text"/>
+                        <input type="text" maxLength="50" required/>
                     </fieldset>
                     <fieldset>
                         <label>
                             Whatsapp
                         </label>
-                        <input type="text"/>
+                        <input type="text" maxLength="11"  pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})" required/>
                     </fieldset>
                     <fieldset>
                         <label>
                             Assunto
                         </label>
-                        <textarea/>
+                        <textarea maxlength="120" required/>
                     </fieldset>
+                    <button className="btn_enviar_form">Enviar</button>
                 </form>
             </section>
             <Rodape/>

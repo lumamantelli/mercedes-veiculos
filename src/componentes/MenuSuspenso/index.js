@@ -27,11 +27,11 @@ function MenuSuspenso() {
                     <img className="logo_menu" src='/imagens/logo.svg' alt='Logo Mercedes Veículos'/>
                 </div>
                 <div className="menu_suspenso_link">
-                    <MenuSuspensoLink url="./">
+                    <MenuSuspensoLink url="/">
                         <img className="icone" src='/imagens/home.svg' alt='Icone Home'/>
                         Home
                     </MenuSuspensoLink>
-                    <MenuSuspensoLink url="./Contato">
+                    <MenuSuspensoLink url="/Contato">
                         <img className="icone" src='/imagens/phone.svg' alt='Icone Phone'/>
                         Contato
                     </MenuSuspensoLink>

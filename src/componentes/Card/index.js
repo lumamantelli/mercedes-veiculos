@@ -1,7 +1,7 @@
 import { formatPrice } from 'Context/FormatPrice'
 import './Card.css'
 
-function Card({ imagem, nome, ano, preco, id }) {
+function Card({ imagem, modelo, ano, preco, id }) {
     return (
         <div className='card'>
             <div className='card_fotos'>
@@ -9,7 +9,7 @@ function Card({ imagem, nome, ano, preco, id }) {
             </div>
             <div className='card_informacoes'>
                 <div className='nome_informacoes'>
-                    <h4>{nome}</h4>
+                    <h4>{modelo}</h4>
                     <h5>{ano}</h5>
                 </div>
                 <div className='preco_btn-mais'>
