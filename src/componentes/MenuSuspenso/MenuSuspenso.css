@@ -95,7 +95,7 @@
     width: 17px;
 }
 
-@media screen and (min-width: 380px) {
+@media screen and (min-width: 430px) {
     .btn_menu{
         margin-top: 10px;
     }
