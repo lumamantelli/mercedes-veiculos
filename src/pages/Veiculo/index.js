@@ -3,7 +3,6 @@ import "./Veiculo.css"
 import { useEffect, useState } from "react"
 import MenuSuspenso from "componentes/MenuSuspenso"
 import Cabecalho from "componentes/Cabecalho"
-import Conteudo from "componentes/Conteudo"
 import Rodape from "componentes/Rodape"
 import { formatPrice } from "Context/FormatPrice"
 
@@ -30,18 +29,18 @@ function Veiculo() {
         <main>
             <MenuSuspenso/>
             <Cabecalho/>
-            <Conteudo>
-                <div className="veiculo_container">
+            
+                <div className="veiculo">
                     <img className="veiculo_img" src={veiculo.imagem} alt={`Foto ${veiculo.modelo}`}/>
-                    <div className="veiculo_info">
-                        <h4 className="veiculo_nome">{veiculo.modelo}</h4>
-                        <p className="veiculo_dados">
+                    <div className="veiculo_container">
+                        <h4 className="veiculo_modelo">{veiculo.modelo}</h4>
+                        <p className="veiculo_info">
                             {veiculo.ano}<br/>
                             {`${formatPrice(veiculo.preco)}`}
                         </p>
                     </div>
                 </div>
-            </Conteudo>
+            
             <Rodape/>
         </main>
     )

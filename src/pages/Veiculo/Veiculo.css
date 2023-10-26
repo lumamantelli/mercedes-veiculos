@@ -1,0 +1,42 @@
+.veiculo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.veiculo_img {
+    width: 80%;
+    border-radius: 8px;
+}
+
+.veiculo_container{
+    width: 80%;
+}
+
+.veiculo_modelo{
+    font-size: 1rem;
+}
+
+.veiculo_info {
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 780px) {
+    .veiculo{
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .veiculo_img{
+        width: 45%;
+    }
+
+    .veiculo_container{
+        width: 35%;
+    }
+}
+
