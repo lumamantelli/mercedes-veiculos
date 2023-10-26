@@ -89,9 +89,11 @@ function Conteudo() {
                 <img src='/imagens/seta.svg' alt='seta'/>
             </div>
             <div className='whatsapp'>
-                <button className='btn_whatsapp'>
-                    <img className='logo_whats' src='/imagens/logo-whatsapp.svg' alt='Logo Whatsapp'/>
-                </button>
+                <a target='blank' href='https://wa.me/5566996231390?text=Olá, vim do catálogo'>
+                    <button className='btn_whatsapp'>
+                        <img className='logo_whats' src='/imagens/logo-whatsapp.svg' alt='Logo Whatsapp'/>
+                    </button>
+                </a>
             </div>
         </section>
 

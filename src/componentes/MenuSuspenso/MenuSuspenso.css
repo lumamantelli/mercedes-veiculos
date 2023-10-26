@@ -1,17 +1,35 @@
 .menu_suspenso {
-    display: none;
+    display: flex;
     width: 100%;
     position: absolute;
     z-index: 1;
     justify-content: right;
+
+
 }
 
-.active {
-    display: flex;
-    
+.menu.inativo {
+    display: none;
+   
 }
+
+.inativo {
+    display: none;
+}
+
+
+.btn_menu {
+    margin: 10px 30px;
+    border: none;
+    position: absolute;
+    z-index: -1;
+    height: 55px;
+}
+
+
 
 .menu_suspenso_container {
+    
     border-radius: 8px 0 0 8px;
     width: 20%;
     height: 480px;
