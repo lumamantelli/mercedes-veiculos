@@ -6,7 +6,7 @@
     padding: 20px 0;
 }
 
-.card {
+.card_content {
     background: var(--cinza);
     border-radius: 26px;
     height: 390px;
@@ -27,6 +27,19 @@
     margin: 15px;
 }
 
+.preco {
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.modelo {
+    margin-bottom: 0;
+}
+
+.link_mais{
+    text-decoration: none;
+}
+
 
 .btn_mais {
     align-items: center;
@@ -34,6 +47,7 @@
     border-radius: 100%;
     color: var(--branco);
     display: flex;
+    font-family: var(--montserrat);
     font-size: 3rem;
     font-weight: 600;
     height: 45px;
@@ -56,11 +70,9 @@
     height: 250px;
     object-fit: cover;
     width: 100%;
+    
 }
 
-.active{
-    display: block;
-}
 
 .ver_mais {
     align-items: center;

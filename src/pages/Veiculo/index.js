@@ -5,6 +5,7 @@ import MenuSuspenso from "componentes/MenuSuspenso"
 import Cabecalho from "componentes/Cabecalho"
 import Rodape from "componentes/Rodape"
 import { formatPrice } from "Context/FormatPrice"
+import { Carousel, CarouselItem } from "react-bootstrap"
 
 
 function Veiculo() {
@@ -31,7 +32,26 @@ function Veiculo() {
             <Cabecalho/>
             
                 <div className="veiculo">
-                    <img className="veiculo_img" src={veiculo.imagem} alt={`Foto ${veiculo.modelo}`}/>
+                    <Carousel className="carousel_content">
+                        <CarouselItem>
+                            <img className="veiculo_img" src={veiculo.imagem} alt={`Foto ${veiculo.modelo}`}/>
+                        </CarouselItem>
+                        <CarouselItem>
+                            <img className="veiculo_img" src={veiculo.imagem} alt={`Foto ${veiculo.modelo}`}/>
+                        </CarouselItem>
+                        <CarouselItem>
+                            <img className="veiculo_img" src={veiculo.imagem} alt={`Foto ${veiculo.modelo}`}/>
+                        </CarouselItem>
+                        <CarouselItem>
+                            <img className="veiculo_img" src={veiculo.imagem} alt={`Foto ${veiculo.modelo}`}/>
+                        </CarouselItem>
+                        <CarouselItem>
+                            <img className="veiculo_img" src={veiculo.imagem} alt={`Foto ${veiculo.modelo}`}/>
+                        </CarouselItem>
+                        <CarouselItem>
+                            <img className="veiculo_img" src={veiculo.imagem} alt={`Foto ${veiculo.modelo}`}/>
+                        </CarouselItem>
+                    </Carousel>
                     <div className="veiculo_container">
                         <h4 className="veiculo_modelo">{veiculo.modelo}</h4>
                         <div className="veiculos_container_info">
