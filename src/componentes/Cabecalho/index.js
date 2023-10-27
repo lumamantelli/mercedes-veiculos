@@ -9,7 +9,7 @@ function Cabecalho() {
     return (
         <header className={styles.cabecalho}>
       
-                <Link to='./'>
+                <Link to='/'>
                     <img className={styles.logo} src='/imagens/logo.svg' alt='Logo Mercedes Veiculos'/>
                 </Link>
                 <nav className={styles.nav}>

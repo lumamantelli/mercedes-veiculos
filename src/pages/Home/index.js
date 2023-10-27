@@ -4,32 +4,24 @@ import BarraDePesquisa from 'componentes/BarraDePesquisa'
 import Conteudo from 'componentes/Conteudo'
 import Rodape from 'componentes/Rodape'
 import MenuSuspenso from 'componentes/MenuSuspenso'
-import Card from 'componentes/Card'
-import { useEffect, useState } from 'react'
-
+import React from 'react'
 
 
 function Home () {
-    const [veiculos, setVeiculos] = useState([])
+ 
+    const [valorDoFiltro, setValorDoFiltro] = React.useState("");
 
-    useEffect(() => {
-        fetch('https://my-json-server.typicode.com/lumamantelli/mercedes-veiculos-api/veiculos')
-            .then(resposta => resposta.json())
-            .then(dados => {
-                setVeiculos(dados)
-            })
-    }, [])
+
+    
 
     return (
         <main>
             <MenuSuspenso/>
             <Cabecalho/>
             <Banner/>
-            <BarraDePesquisa/>
-            <Conteudo>
-                {veiculos.map((veiculo) => {
-                    return <Card {...veiculo} key={veiculo.id} />
-                })}
+            <BarraDePesquisa valorFiltro={valorDoFiltro} setValorFiltro={setValorDoFiltro} />
+            <Conteudo searchValue={valorDoFiltro} >
+                
             </Conteudo>
             <Rodape/>
         </main>

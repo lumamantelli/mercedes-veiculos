@@ -1,10 +1,32 @@
+import Card from 'componentes/Card'
 import './Conteudo.css'
+import { useEffect, useState } from 'react'
 
-function Conteudo({ children }) {
+function Conteudo({ searchValue }) {
+    const [veiculos, setVeiculos] = useState([])
+
+    useEffect(() => {
+        fetch('https://my-json-server.typicode.com/lumamantelli/mercedes-veiculos-api/veiculos')
+            .then(resposta => resposta.json())
+            .then(dados => {
+                setVeiculos(dados)
+            })
+    }, [])
+
     return (
         <section className='content'>
-            <div className='card_container'>
-                {children}
+            <div className='card_container' data-container>
+
+                {veiculos
+                    .filter((veiculo) => {
+                        const titleNormalized = veiculo.modelo.toLowerCase()
+                        const searchValueNormalized = searchValue.toLowerCase()
+                        return titleNormalized.includes(searchValueNormalized)
+                    })
+
+                    .map((veiculo) => {
+                        return <Card {...veiculo} key={veiculo.id} />
+                })}
             </div> 
             <div className='ver_mais'>
                 <h5>Ver mais</h5>

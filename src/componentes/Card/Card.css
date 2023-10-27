@@ -41,6 +41,10 @@
     width: 45px;
 }
 
+.btn_mais:active{
+    transform: scale(0.9);
+}
+
 .info_card{
     display: flex;
     gap: 5px;
