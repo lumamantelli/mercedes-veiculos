@@ -29,11 +29,16 @@
 
 .preco {
     font-weight: 600;
-    margin-bottom: 0;
+   
 }
 
-.modelo {
+.modelo .preco .txt{
     margin-bottom: 0;
+    font-family: var(--montserrat);
+}
+
+.txt{
+    text-transform: uppercase;
 }
 
 .link_mais{

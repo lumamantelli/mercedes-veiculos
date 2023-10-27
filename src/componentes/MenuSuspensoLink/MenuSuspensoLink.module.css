@@ -2,7 +2,8 @@
     border-radius: 7px;
     color: var(--preto);
     font-size: 0.9rem;
-    padding: 10px;
+    padding: 7px;
+    font-family: var(--montserrat);
     text-decoration: none;
 }
 

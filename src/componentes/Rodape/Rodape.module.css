@@ -45,11 +45,13 @@
 }
 
 .copy_img {
-    width: 9px;
+    width: 10px;
 }
 
 .credito_texto {
     font-size: 0.8rem;
+    font-family: var(--montserrat);
+    margin-bottom: 0;
 }
 
 @media screen and (max-width: 370px) {

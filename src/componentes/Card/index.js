@@ -28,10 +28,10 @@ function Card({ imagem, modelo, ano, motor, tracao, cambio, preco, id }) {
                 <div className='nome_informacoes'>
                     <h6 className='modelo'>{modelo}</h6>
                     <div className='info_card'>
-                        <p>{ano}</p>
-                        <p>{motor}</p>
-                        <p>{tracao}</p>
-                        <p>{cambio}</p>
+                        <p className='txt'>{ano}</p>
+                        <p className='txt'>{motor}</p>
+                        <p className='txt'>{tracao}</p>
+                        <p className='txt'>{cambio}</p>
                     </div>
                 </div>
                 <div className='preco_btn-mais'>

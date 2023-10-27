@@ -1,4 +1,5 @@
 import Contato from "pages/Contato";
+import "index.css"
 import Home from "pages/Home";
 import Veiculo from "pages/Veiculo";
 

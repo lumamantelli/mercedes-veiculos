@@ -29,7 +29,7 @@ function Conteudo({ searchValue }) {
                 })}
             </div> 
             <div className='ver_mais'>
-                <h5>Ver mais</h5>
+                <h5 className='ver_mais_texto'>Ver mais</h5>
                 <img src='/imagens/seta.svg' alt='seta'/>
             </div>
             <div className='whatsapp'>

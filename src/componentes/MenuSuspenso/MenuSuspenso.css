@@ -24,7 +24,10 @@
     z-index: -1;
 }
 
-
+.credito_texto {
+    margin-bottom: 0;
+    font-family: var(--montserrat);
+}
 
 .menu_suspenso_container {
     background: var(--cinza);
@@ -97,7 +100,7 @@
 
 @media screen and (min-width: 430px) {
     .btn_menu{
-        margin-top: 10px;
+        margin-top: 7px;
     }
 
     .menu_suspenso_container{
