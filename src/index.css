@@ -21,8 +21,13 @@ code {
     monospace;
 }
 
+input:focus, textarea:focus{
+  outline: none;
+}
+
 p {
   font-size: 0.7rem;
+  margin: 0;
 }
 
 a{

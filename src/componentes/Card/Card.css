@@ -41,6 +41,12 @@
     width: 45px;
 }
 
+.info_card{
+    display: flex;
+    gap: 5px;
+    
+}
+
 .card_foto{
     border-radius: 26px;
     height: 250px;

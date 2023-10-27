@@ -73,25 +73,23 @@ fieldset{
     width: 100%;
 }
 
-input, textarea{
+.input_form, .textarea_form{
     border: none;
     border-radius: 6px;
     font-family: var(--montserrat);
-    
 }
 
 
 
-input{
+.input_form{
     height: 30px;
 }
 
-input:focus, textarea:focus {
+.input_form:focus, .textarea_form:focus {
     border: solid 1px var(--cinza-escuro);
-    outline:none;
 }
 
-textarea{
+.textarea_form{
     height: 55px;
     resize: none;
 }
