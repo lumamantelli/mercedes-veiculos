@@ -9,6 +9,7 @@ import { Carousel, CarouselItem } from "react-bootstrap"
 
 
 function Veiculo() {
+    
     const parametros = useParams()
     const [veiculo, setVeiculo] = useState()
     
@@ -34,23 +35,21 @@ function Veiculo() {
                 <div className="veiculo">
                     <Carousel className="carousel_content">
                         <CarouselItem>
-                            <img className="veiculo_img" src={veiculo.imagem} alt={`Foto ${veiculo.modelo}`}/>
+                            <img className="veiculo_img" src={veiculo.imagem1} alt={`Foto ${veiculo.modelo}`}/>
                         </CarouselItem>
                         <CarouselItem>
-                            <img className="veiculo_img" src={veiculo.imagem} alt={`Foto ${veiculo.modelo}`}/>
+                            <img className="veiculo_img" src={veiculo.imagem2} alt={`Foto ${veiculo.modelo}`}/>
                         </CarouselItem>
                         <CarouselItem>
-                            <img className="veiculo_img" src={veiculo.imagem} alt={`Foto ${veiculo.modelo}`}/>
+                            <img className="veiculo_img" src={veiculo.imagem3} alt={`Foto ${veiculo.modelo}`}/>
                         </CarouselItem>
                         <CarouselItem>
-                            <img className="veiculo_img" src={veiculo.imagem} alt={`Foto ${veiculo.modelo}`}/>
+                            <img className="veiculo_img" src={veiculo.imagem4} alt={`Foto ${veiculo.modelo}`}/>
                         </CarouselItem>
                         <CarouselItem>
-                            <img className="veiculo_img" src={veiculo.imagem} alt={`Foto ${veiculo.modelo}`}/>
+                            <img className="veiculo_img" src={veiculo.imagem5} alt={`Foto ${veiculo.modelo}`}/>
                         </CarouselItem>
-                        <CarouselItem>
-                            <img className="veiculo_img" src={veiculo.imagem} alt={`Foto ${veiculo.modelo}`}/>
-                        </CarouselItem>
+                    
                     </Carousel>
                     <div className="veiculo_container">
                         <h4 className="veiculo_modelo">{veiculo.modelo}</h4>
@@ -86,10 +85,14 @@ function Veiculo() {
                                 {`${formatPrice(veiculo.preco)}`}
                             </div>
                         </div>
-                        <button className="btn_conversar">
-                            <img className="logo_whats_conver" src="/imagens/logo-whatsapp.svg" alt="Logo Whatsapp"/>
-                            Conversar com o vendedor
-                        </button>
+                        <a className='btn_pg_veiculo' target="blank" href={`
+                            https://wa.me/5566996231390?text=Olá,%20tenho%20interesse%20nesse carro.%0A*Modelo:* ${veiculo.modelo}%0A*Ano:* ${veiculo.ano}%0A*Motor:* ${veiculo.motor}%0A*Cidade:* ${veiculo.cidade}%20-%20${veiculo.estado}%0A*Preço:* ${veiculo.preco}
+                         `}>
+                            <button className="btn_conversar">
+                                <img className="logo_whats_conver" src="/imagens/logo-whatsapp.svg" alt="Logo Whatsapp"/>
+                                Conversar com o vendedor
+                            </button>
+                        </a>
                     </div>
                 </div>
             

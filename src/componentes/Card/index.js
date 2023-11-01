@@ -3,24 +3,24 @@ import 'bootstrap/dist/css/bootstrap.css'
 import { formatPrice } from 'Context/FormatPrice'
 import { Carousel, CarouselItem } from 'react-bootstrap'
 
-function Card({ imagem, modelo, ano, motor, tracao, cambio, preco, id }) {
+function Card({ imagem1, imagem2, imagem3, imagem4, imagem5, modelo, ano, motor, tracao, cambio, preco, id }) {
     return (
         <div className='card_content'>
             <Carousel className='card_fotos'>
                 <CarouselItem>
-                    <img className='card_foto' src={imagem} alt='Foto 1 Carro'/>
+                    <img className='card_foto' src={imagem1} alt='Foto 1 Carro'/>
                 </CarouselItem>
                 <CarouselItem>
-                    <img className='card_foto' src={imagem} alt='Foto 1 Carro'/>
+                    <img className='card_foto' src={imagem2} alt='Foto 1 Carro'/>
                 </CarouselItem>
                 <CarouselItem>
-                    <img className='card_foto' src={imagem} alt='Foto 1 Carro'/>
+                    <img className='card_foto' src={imagem3} alt='Foto 1 Carro'/>
                 </CarouselItem>
                 <CarouselItem>
-                    <img className='card_foto' src={imagem} alt='Foto 1 Carro'/>
+                    <img className='card_foto' src={imagem4} alt='Foto 1 Carro'/>
                 </CarouselItem>
                 <CarouselItem>
-                    <img className='card_foto' src={imagem} alt='Foto 1 Carro'/>
+                    <img className='card_foto' src={imagem5} alt='Foto 1 Carro'/>
                 </CarouselItem>
             </Carousel>
 

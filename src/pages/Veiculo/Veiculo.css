@@ -72,6 +72,10 @@
     font-family: var(--montserrat);
 }
 
+.btn_pg_veiculo{
+    text-decoration: none;
+}
+
 .btn_conversar:active{
     transform: scale(0.9);
 }
