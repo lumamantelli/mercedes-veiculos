@@ -7,14 +7,17 @@
 }
 
 .veiculo_img {
-    width: 100%;
     border-radius: 8px;
+    width: 100%;
+    margin: auto;
 }
 
 .carousel_content {
     width: 80%;
-
 }
+
+
+
 
 .veiculo_container{
     width: 80%;

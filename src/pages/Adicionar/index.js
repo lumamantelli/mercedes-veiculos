@@ -98,6 +98,7 @@ function Adicionar() {
                             <option className='option_disabled' selected disabled>Selecione...</option>
                             <option>Dupla</option>
                             <option>Simples</option>
+                            <option>Não se aplica</option>
                         </select>
                     </fieldset>
                     <fieldset className='fieldset_add'>
@@ -132,7 +133,17 @@ function Adicionar() {
                         <label>
                             Carroceria
                         </label>
-                        <input className='input_add'/>
+                        <select>
+                            <option className='option_disabled' selected disabled>Selecione...</option>
+                            <option>Hatch</option>
+                            <option>SUV</option>
+                            <option>Crossover</option>
+                            <option>Coupé</option>
+                            <option>Picape</option>
+                            <option>Sedan</option>
+                            <option>Minivan</option>
+                            <option>Utilitário</option>
+                        </select>
                     </fieldset>
                     <fieldset className='fieldset_add'>
                         <label>

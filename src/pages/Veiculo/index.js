@@ -34,19 +34,19 @@ function Veiculo() {
             
                 <div className="veiculo">
                     <Carousel className="carousel_content">
-                        <CarouselItem>
+                        <CarouselItem className="carrossel_item">
                             <img className="veiculo_img" src={veiculo.imagem1} alt={`Foto ${veiculo.modelo}`}/>
                         </CarouselItem>
-                        <CarouselItem>
+                        <CarouselItem className="carrossel_item">
                             <img className="veiculo_img" src={veiculo.imagem2} alt={`Foto ${veiculo.modelo}`}/>
                         </CarouselItem>
-                        <CarouselItem>
+                        <CarouselItem className="carrossel_item">
                             <img className="veiculo_img" src={veiculo.imagem3} alt={`Foto ${veiculo.modelo}`}/>
                         </CarouselItem>
-                        <CarouselItem>
+                        <CarouselItem className="carrossel_item">
                             <img className="veiculo_img" src={veiculo.imagem4} alt={`Foto ${veiculo.modelo}`}/>
                         </CarouselItem>
-                        <CarouselItem>
+                        <CarouselItem className="carrossel_item">
                             <img className="veiculo_img" src={veiculo.imagem5} alt={`Foto ${veiculo.modelo}`}/>
                         </CarouselItem>
                     

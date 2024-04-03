@@ -28,13 +28,13 @@ function Rodape() {
                     </div>
                     <div className={styles.nav_link}>
                         <h4 className={styles.rodape_nav_titulo}>Institucional</h4>
-                        <RodapeLink>
+                        <RodapeLink url="/Lgpd">
                             LGPD
                         </RodapeLink>
-                        <RodapeLink>
+                        <RodapeLink url='/Cdc'>
                             Código de defesa do consumidor
                         </RodapeLink>
-                        <RodapeLink>
+                        <RodapeLink url="./Cookies">
                             Gerenciamento de cookies
                         </RodapeLink>
                         <RodapeLink>

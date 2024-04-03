@@ -1,0 +1,10 @@
+.conteudo {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--montserrat);
+    gap: 10px;
+    padding: 50px;
+    text-align: justify;
+}
+

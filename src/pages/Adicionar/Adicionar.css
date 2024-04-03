@@ -22,6 +22,7 @@
 .input_add::placeholder{
     font-size: 0.7rem;
     line-height: normal;
+    font-family: var(--montserrat);
 }
 
 .btn__add{
@@ -30,5 +31,22 @@
     font-family: var(--montserrat);
     font-weight: 600;
     border-radius: 8px;
-    height: 30px;
+    height: 45px;
+    width: 100%;
+}
+
+
+
+select, input{
+    height: 35px;
+    border-radius: 6px;
+    border: solid 1px var(--cinza);
+}
+
+select:focus{
+    border: solid 1.3px var(--vermelho);
+}
+
+input:focus{
+    border: solid 1.3px var(--vermelho);
 }

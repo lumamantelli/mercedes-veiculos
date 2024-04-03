@@ -12,8 +12,6 @@ function Home () {
     const [valorDoFiltro, setValorDoFiltro] = React.useState("");
 
 
-    
-
     return (
         <main>
             <MenuSuspenso/>
