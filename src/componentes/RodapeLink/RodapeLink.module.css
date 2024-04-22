@@ -7,5 +7,5 @@
 }
 
 .link_rodape > span:hover{
-    border-bottom: solid 2px var(--preto);
+    border-bottom: solid 2px var(--branco);
 }

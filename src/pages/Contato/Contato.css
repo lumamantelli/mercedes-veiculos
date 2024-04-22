@@ -20,7 +20,7 @@
 
 .icones {
     display: flex;
-    flex-direction: column;
+    
     gap: 10px;
 }
 
@@ -60,7 +60,7 @@
 }
 
 label{
-    color: var(--vermelho);
+    color: var(--preto);
     font-size: 0.8rem;
     padding: 5px 0;
     font-weight: 500;

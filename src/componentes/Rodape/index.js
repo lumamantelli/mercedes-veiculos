@@ -34,7 +34,7 @@ function Rodape() {
                         <RodapeLink url='/Cdc'>
                             Código de defesa do consumidor
                         </RodapeLink>
-                        <RodapeLink url="./Cookies">
+                        <RodapeLink url="/Cookies">
                             Gerenciamento de cookies
                         </RodapeLink>
                         <RodapeLink>
@@ -44,7 +44,7 @@ function Rodape() {
                 </nav>
             </div>
             <div className={styles.credito_rodape}>
-                <img className={styles.copy_img} src='/imagens/copyright.svg' alt='copyright'/>
+                <img className={styles.copy_img} src='/imagens/copyrigth.svg' alt='copyright'/>
                 <p className={styles.credito_texto}>2023 - Luma Mantelli</p>
             </div>
         </footer>

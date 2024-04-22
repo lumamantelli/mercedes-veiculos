@@ -9,27 +9,27 @@
 .card_content {
     background: var(--cinza);
     border-radius: 26px;
-    height: 390px;
+    height: 490px;
     width: 265px;
 }
 
 .preco_btn-mais {
     align-items: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .card_informacoes {
     display: flex;
     flex-direction: column;
-    height: 109px;
+    height: 40%;
     justify-content: space-between;
     margin: 15px;
 }
 
 .preco {
     font-weight: 600;
-   
+   color: var(--vermelho);
 }
 
 .modelo .preco .txt{
@@ -37,8 +37,14 @@
     font-family: var(--montserrat);
 }
 
+.modelo{
+    padding-bottom: 5px;
+    color: #000;
+}
+
 .txt{
     text-transform: uppercase;
+    color: #000;
 }
 
 .link_mais{
@@ -48,16 +54,17 @@
 
 .btn_mais {
     align-items: center;
-    background: var(--cinza-escuro);
-    border-radius: 100%;
+    background: var(--vermelho);
+    border-radius: 5px;
     color: var(--branco);
     display: flex;
+
     font-family: var(--montserrat);
-    font-size: 3rem;
+    font-size: 1rem;
     font-weight: 600;
-    height: 45px;
+    height: 25px;
     justify-content: center;
-    width: 45px;
+    width: 80%;
 }
 
 .btn_mais:active{
@@ -66,7 +73,8 @@
 
 .info_card{
     display: flex;
-    gap: 5px;
+    flex-direction: column;
+    line-height: 0.5em;
     
 }
 

@@ -5,6 +5,7 @@ import { Carousel, CarouselItem } from 'react-bootstrap'
 
 function Card({ imagem1, imagem2, imagem3, imagem4, imagem5, modelo, ano, motor, tracao, cambio, preco, id }) {
     return (
+        <a className='link_mais' href={`./${id}`}>
         <div className='card_content'>
             <Carousel className='card_fotos'>
                 <CarouselItem>
@@ -32,16 +33,15 @@ function Card({ imagem1, imagem2, imagem3, imagem4, imagem5, modelo, ano, motor,
                         <p className='txt'>{motor}</p>
                         <p className='txt'>{tracao}</p>
                         <p className='txt'>{cambio}</p>
+                        <h6 className='preco'>{formatPrice(preco)}</h6>
                     </div>
                 </div>
                 <div className='preco_btn-mais'>
-                    <h6 className='preco'>{formatPrice(preco)}</h6>
-                    <a className='link_mais' href={`./${id}`}>
-                        <button className='btn_mais'>+</button>
-                    </a>
+                    <button className='btn_mais'>Saiba mais</button>
                 </div>
             </div>
         </div>
+        </a>
     )
 }
 

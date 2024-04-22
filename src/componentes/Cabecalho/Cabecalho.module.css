@@ -2,8 +2,8 @@
     align-items: center;
     background: var(--cinza);
     display: flex;
-    gap: 2px;
-    padding: 0 0;
+    
+    padding: 0 20% 0 20%;
 }
 
 .nav {
@@ -35,7 +35,7 @@
     justify-content: right;
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 800px) {
     .nav {
         display: none;
     }
@@ -59,11 +59,11 @@
 }
 @media screen and (min-width: 1020px) {
     .cabecalho{
-        gap: 30%;
+        gap: 18%;
     }
 }
 @media screen and (min-width: 1400px) {
     .cabecalho{
-        gap: 35%;
+        gap: 25%;
     }
 }

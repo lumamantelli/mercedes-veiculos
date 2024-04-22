@@ -62,7 +62,7 @@ function MenuSuspenso() {
                 </div>
 
                 <div className="menu_rodape">
-                    <img className="copy" src='/imagens/copyright.svg' alt='Copyright'/>
+                    <img className="copy" src='/imagens/copyrigthpreto.svg' alt='Copyright'/>
                     <p className='credito_texto'>2023 - Luma Mantelli</p>
                 </div>
             </div>

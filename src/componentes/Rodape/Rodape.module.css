@@ -38,7 +38,7 @@
 
 .credito_rodape {
     align-items: center;
-    background: var(--cinza);
+    background: var(--vermelho-02);
     display: flex;
     gap: 5px;
     justify-content: center;
@@ -49,6 +49,7 @@
 }
 
 .credito_texto {
+    color: var(--branco);
     font-size: 0.8rem;
     font-family: var(--montserrat);
     margin-bottom: 0;
@@ -68,7 +69,8 @@
 @media screen and (min-width: 430px) {
     .rodape_conteudo{
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 10%;
     }
 }
 
