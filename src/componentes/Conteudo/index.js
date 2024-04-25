@@ -1,16 +1,22 @@
 import Card from 'componentes/Card'
 import './Conteudo.css'
 import { useEffect, useState } from 'react'
+import api from 'api/api'
 
 function Conteudo({ searchValue }) {
     const [veiculos, setVeiculos] = useState([])
 
     useEffect(() => {
-        fetch('https://my-json-server.typicode.com/lumamantelli/mercedes-veiculos-api/veiculos')
-            .then(resposta => resposta.json())
-            .then(dados => {
-                setVeiculos(dados)
-            })
+        api
+        .get("/veiculos")
+        // fetch('https://my-json-server.typicode.com/lumamantelli/mercedes-veiculos-api/veiculos')
+            .then((resposta) => setVeiculos (resposta.data))
+            // .then(dados => {
+            //     setVeiculos(dados)
+            // })
+            .catch((err) => {
+                console.error("ops! ocorreu um erro" + err);
+              });
     }, [])
 
     return (

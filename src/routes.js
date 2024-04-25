@@ -7,7 +7,6 @@ import CodigoDc from "pages/CDC";
 import Lgpd from "pages/LGPD";
 import Cookies from "pages/Cookies";
 
-
 const { BrowserRouter, Routes, Route } = require("react-router-dom");
 
 function AppRoutes() {

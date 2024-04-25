@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import { formatPrice } from 'Context/FormatPrice'
 import { Carousel, CarouselItem } from 'react-bootstrap'
 
-function Card({ imagem1, imagem2, imagem3, imagem4, imagem5, modelo, ano, motor, tracao, cambio, preco, id }) {
+function Card({id, imagem1, imagem2, imagem3, imagem4, imagem5, modelo, ano, motor, tracao, cambio, preco }) {
     return (
         <a className='link_mais' href={`./${id}`}>
         <div className='card_content'>

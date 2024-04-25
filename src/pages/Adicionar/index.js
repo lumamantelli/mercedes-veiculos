@@ -1,27 +1,83 @@
-
 import './Adicionar.css'
 import Cabecalho from 'componentes/Cabecalho'
 import Rodape from 'componentes/Rodape'
+import useForm from 'hooks/useForm';
+import React from 'react';
 
-function Adicionar() {
+
+
+
+function Adicionar()  {
+    const { values, handleChange, clearForm } = useForm({
+        modelo: '',
+        ano: '',
+        cidade: '',
+        estado: '',
+        motor: '',
+        km: '',
+        tracao: '',
+        cabine: '',
+        combustivel: '',
+        cor: '',
+        cambio: '',
+        carroceria: '',
+        troca: '',
+        preco: '',
+        imagens: [],
+      });
+
+      async function handleSubmit(event) {
+        event.preventDefault();
+        try {
+          const response = await fetch('https://my-json-server.typicode.com/lumamantelli/mercedes-veiculos-api/veiculos', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(values),
+          });
+          if (!response.ok) {
+            throw new Error('Não foi possível cadastrar o veículo');
+          }
+          const conexaoConvertida = await response.json();
+          console.log(conexaoConvertida)
+          alert("Veículo adicionado com sucesso!")
+          clearForm();
+        } catch (error) {
+          console.error(error);
+        }
+      }
+   
+    
     return(
         <>
             <Cabecalho/>
             <main className='main_add'>
-                <form className='formulario form_add'>
+                <form onSubmit={handleSubmit} className='formulario form_add'>
                     <h2>Adicionar novo carro</h2>
                     <fieldset className='fieldset_add'>
                         <label>
                             Modelo
                         </label>
-                        <input className='input_add' type='text'/>
+                        <input 
+                            className='input_add'
+                            type='text'
+                            name='modelo'
+                            value={values.name}
+                            onChange={handleChange}
+                            />
                     </fieldset>
                     <fieldset className='fieldset_add'>
                         <label>
                             Ano
                         </label>
-                        <select className='select_add'>
-                            <option className='option_disabled' selected disabled>Selecione um ano</option>
+                        <select 
+                            className='select_add'
+                            name='ano'
+                            value={values.name}
+                            onChange={handleChange}
+                            >
+                            <option className='option_disabled' disabled>Selecione um ano</option>
                             <option>2023</option>
                             <option>2022</option>
                             <option>2021</option>
@@ -59,32 +115,61 @@ function Adicionar() {
                         <label>
                             Cidade
                         </label>
-                        <input className='input_add' type='text'/>
+                        <input 
+                            className='input_add' 
+                            type='text'
+                            name='cidade'
+                            value={values.name}
+                            onChange={handleChange}
+                            />
                     </fieldset>
                     <fieldset className='fieldset_add'>
                         <label>
                             Estado
                         </label>
-                        <input className='input_add' placeholder='Apenas sigla' type='text'/>
+                        <input 
+                            className='input_add' 
+                            placeholder='Apenas sigla' 
+                            type='text'
+                            name='estado'
+                            value={values.name}
+                            onChange={handleChange}
+                            />
                     </fieldset>
                     <fieldset className='fieldset_add'>
                         <label>
                             Motor
                         </label>
-                        <input className='input_add' type='text'/>
+                        <input 
+                            className='input_add' 
+                            name='motor'
+                            value={values.name}
+                            onChange={handleChange}
+                            />
                     </fieldset>
                     <fieldset className='fieldset_add'>
                         <label>
                             KM
                         </label>
-                        <input className='input_add' type='number'/>
+                        <input 
+                            className='input_add' 
+                            type='number'
+                            name='km'
+                            value={values.name}
+                            onChange={handleChange}
+                            />
                     </fieldset>
                     <fieldset className='fieldset_add'>
                         <label>
                             Tração
                         </label>
-                        <select className='select_add'>
-                            <option className='option_disabled' selected disabled>Selecione...</option>
+                        <select 
+                            className='select_add'
+                            name='tracao'
+                            value={values.name}
+                            onChange={handleChange}
+                            >
+                            <option className='option_disabled' disabled>Selecione...</option>
                             <option>4x4</option>
                             <option>4x2</option>
                             <option>AWD</option>
@@ -94,8 +179,13 @@ function Adicionar() {
                         <label>
                             Cabine
                         </label>
-                        <select className='select_add'>
-                            <option className='option_disabled' selected disabled>Selecione...</option>
+                        <select 
+                            className='select_add'
+                            name='cabine'
+                            value={values.name}
+                            onChange={handleChange}
+                            >
+                            <option className='option_disabled'  disabled>Selecione...</option>
                             <option>Dupla</option>
                             <option>Simples</option>
                             <option>Não se aplica</option>
@@ -105,8 +195,13 @@ function Adicionar() {
                         <label>
                             Combustível
                         </label>
-                        <select className='select_add'>
-                            <option className='option_disabled' selected disabled>Selecione...</option>
+                        <select 
+                            className='select_add'
+                            name='combustivel'
+                            value={values.name}
+                            onChange={handleChange}
+                            >
+                            <option className='option_disabled'  disabled>Selecione...</option>
                             <option>Gasolina</option>
                             <option>Álcool</option>
                             <option>Flex</option>
@@ -117,14 +212,25 @@ function Adicionar() {
                         <label>
                             Cor
                         </label>
-                        <input className='input_add' type='text'/>
+                        <input 
+                            className='input_add' 
+                            type='text'
+                            name='cor'
+                            value={values.name}
+                            onChange={handleChange}
+                            />
                     </fieldset>
                     <fieldset className='fieldset_add'>
                         <label>
                             Câmbio
                         </label>
-                        <select className='select_add'>
-                            <option className='option_disabled' selected disabled>Selecione...</option>
+                        <select 
+                            className='select_add'
+                            name='cambio'
+                            value={values.name}
+                            onChange={handleChange}
+                            >
+                            <option className='option_disabled'  disabled>Selecione...</option>
                             <option>Manual</option>
                             <option>Automático</option>
                         </select>
@@ -133,8 +239,12 @@ function Adicionar() {
                         <label>
                             Carroceria
                         </label>
-                        <select>
-                            <option className='option_disabled' selected disabled>Selecione...</option>
+                        <select 
+                            name='carroceria'
+                            value={values.name}
+                            onChange={handleChange}
+                        >
+                            <option className='option_disabled'  disabled>Selecione...</option>
                             <option>Hatch</option>
                             <option>SUV</option>
                             <option>Crossover</option>
@@ -149,7 +259,11 @@ function Adicionar() {
                         <label>
                             Aceita Troca?
                         </label>
-                        <select>
+                        <select 
+                            name='troca'
+                            value={values.name}
+                            onChange={handleChange}
+                        >
                             <option>Sim</option>
                             <option>Não</option>
                         </select>
@@ -158,7 +272,27 @@ function Adicionar() {
                         <label>
                             Preço
                         </label>
-                        <input className='input_add' type='number'/>
+                        <input 
+                            className='input_add' 
+                            type='number'
+                            name='preco'
+                            value={values.name}
+                            onChange={handleChange}
+                            />
+                    </fieldset>
+                    <fieldset className='fieldset_add'>
+                        <label>
+                            Imagens
+                        </label>
+                        <input 
+                            type="file"
+                            name="imagens"
+                            accept="image/*"
+                            multiple
+                            value={values.name}
+                            onChange={handleChange}
+                            />
+                        
                     </fieldset>
                     <button type='submit' className='btn__add'>
                         Adicionar veículo
@@ -171,4 +305,4 @@ function Adicionar() {
     )
 }
 
-export default Adicionar
+export default Adicionar;
