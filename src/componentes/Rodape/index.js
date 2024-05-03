@@ -10,7 +10,7 @@ function Rodape() {
                 <nav className={styles.rodape_nav}>
                     <div className={styles.nav_link}>
                         <h4 className={styles.rodape_nav_titulo}>Ajuda</h4>
-                        <RodapeLink>
+                        <RodapeLink url="/QuemSomos">
                             Quem somos 
                         </RodapeLink>
                         <RodapeLink url="/Contato">
@@ -19,11 +19,11 @@ function Rodape() {
                         <RodapeLink>
                             Tabela FIPE
                         </RodapeLink>
-                        <RodapeLink>
+                        <RodapeLink url="/MeioPagamento">
                             Meios de pagamento
                         </RodapeLink>
-                        <RodapeLink>
-                            Vender meu carro
+                        <RodapeLink url="/VenderMeuVeiculo">
+                            Vender meu veículo
                         </RodapeLink>
                     </div>
                     <div className={styles.nav_link}>
@@ -37,7 +37,7 @@ function Rodape() {
                         <RodapeLink url="/Cookies">
                             Gerenciamento de cookies
                         </RodapeLink>
-                        <RodapeLink>
+                        <RodapeLink url="/Politica">
                             Termos de Uso e Política de privacidade
                         </RodapeLink>
                     </div>

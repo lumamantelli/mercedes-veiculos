@@ -6,6 +6,10 @@ import Adicionar from "pages/Adicionar";
 import CodigoDc from "pages/CDC";
 import Lgpd from "pages/LGPD";
 import Cookies from "pages/Cookies";
+import Politica from "pages/Politica";
+import MeioPagamento from "pages/MeioPagamento";
+import VenderMeuVeiculo from "pages/VenderVeiculo";
+import QuemSomos from "pages/QuemSomos";
 
 const { BrowserRouter, Routes, Route } = require("react-router-dom");
 
@@ -20,6 +24,10 @@ function AppRoutes() {
         <Route path="Cdc" element={<CodigoDc/>}/>
         <Route path="LGPD" element={<Lgpd/>}/>
         <Route path="Cookies" element={<Cookies/>}/>
+        <Route path="Politica" element={<Politica/>}/>
+        <Route path="MeioPagamento" element={<MeioPagamento/>}/>
+        <Route path="VenderMeuVeiculo" element={<VenderMeuVeiculo/>}/>
+        <Route path="QuemSomos" element={<QuemSomos/>}/>
       </Routes>
     </BrowserRouter>
   )

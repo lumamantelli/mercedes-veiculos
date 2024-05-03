@@ -39,11 +39,11 @@ function MenuSuspenso() {
                         <img className="icone" src='/imagens/fi.svg' alt='Icone FIPE'/>
                         Tabela FIPE
                     </MenuSuspensoLink>
-                    <MenuSuspensoLink>
+                    <MenuSuspensoLink url="/VenderMeuVeiculo">
                         <img className='icone' src='/imagens/sell.svg' alt='Icone Sell'/>
-                        Vender meu carro
+                        Vender meu veículo
                     </MenuSuspensoLink>
-                    <MenuSuspensoLink>
+                    <MenuSuspensoLink url="/MeioPagamento">
                         <img className="icone" src='/imagens/payment.svg' alt='Icone Payment'/>
                         Meios de pagamento
                     </MenuSuspensoLink>

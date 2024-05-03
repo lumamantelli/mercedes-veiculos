@@ -39,3 +39,18 @@ a{
   text-decoration: none;
   color: none;
 }
+
+label{
+  color: var(--preto);
+  font-size: 0.8rem;
+  padding: 5px 0;
+  font-weight: 500;
+}
+
+fieldset{
+  border: none;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  width: 100%;
+}
