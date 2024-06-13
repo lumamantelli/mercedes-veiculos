@@ -43,9 +43,9 @@ function MenuSuspenso() {
                         <img className='icone' src='/imagens/sell.svg' alt='Icone Sell'/>
                         Vender meu veículo
                     </MenuSuspensoLink>
-                    <MenuSuspensoLink url="/MeioPagamento">
+                    <MenuSuspensoLink url="/Financiamento">
                         <img className="icone" src='/imagens/payment.svg' alt='Icone Payment'/>
-                        Meios de pagamento
+                        Finaciamento
                     </MenuSuspensoLink>
                 </div>
                 

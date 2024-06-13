@@ -1,0 +1,14 @@
+.form-radios {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+label{
+    color: var(--preto);
+    font-size: 0.8rem;
+    padding: 5px 0;
+    font-weight: 600;
+    font: "Montserrat";
+  }

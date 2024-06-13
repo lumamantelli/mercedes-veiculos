@@ -1,7 +1,10 @@
+import React from "react"
 import Cabecalho from "componentes/Cabecalho"
 import MenuSuspenso from "componentes/MenuSuspenso"
 import Rodape from "componentes/Rodape"
 import './VenderVeiculo.css'
+import Formulario from "componentes/Formulario"
+
 
 function VenderMeuVeiculo() {
     return (
@@ -12,44 +15,45 @@ function VenderMeuVeiculo() {
                 <h3 className="titulo">
                     Vender meu veículo
                 </h3>
-                <form className="formulario">
+                <Formulario/>
+                {/* <form action="/send_mail.php" method="post" className="formulario">
                     <fieldset>
-                        <label>
+                        <label htmlFor="name">
                             Nome
                         </label>
-                        <input className="input_form" type="text" minLength="3" />
+                        <input className="input_form" type="text" name="name" minLength="3" />
                     </fieldset>
                     <fieldset>
-                        <label>
+                        <label htmlFor="whatsapp">
                             Whatsapp
                         </label>
-                        <input className="input_form" type="tel" minLength="11" />
+                        <input className="input_form" type="tel" name="whatsapp" minLength="11" />
                     </fieldset>
                     <div className="checkbox">
                         <label>Você é:</label>
-                        <fieldset class="form-radios">
-                            <input class="form-radios-input" type="radio" name="flexRadioDefault" />
-                            <label class="form-radios-label" for="flexRadioDefault1">
+                        <fieldset className="form-radios">
+                            <input className="form-radios-input" type="radio" name="flexRadioDefault tipo_pessoa" />
+                            <label className="form-radios-label" htmlFor="flexRadioDefault1">
                                 Pessoa Física
                             </label>
                         </fieldset>
-                        <fieldset class="form-radios">
-                            <input class="form-radios-input" type="radio" name="flexRadioDefault" />
-                            <label class="form-radios-label" for="flexRadioDefault2">
+                        <fieldset className="form-radios">
+                            <input className="form-radios-input" type="radio" name="flexRadioDefault tipo_pessoa" />
+                            <label className="form-radios-label" htmlFor="flexRadioDefault2">
                                 Pessoa Jurídica
                             </label>
                         </fieldset>
                     </div>
                     <fieldset>
-                        <label>
+                        <label htmlFor="message">
                             Deixe uma mensagem
                         </label>
-                        <textarea />
+                        <textarea name="message" />
                     </fieldset>
                     <button className="btn_enviar_form" type="submit">
                         Enviar
                     </button>
-                </form>
+                </form> */}
             </main>
             <Rodape />
         </>
@@ -57,3 +61,4 @@ function VenderMeuVeiculo() {
 }
 
 export default VenderMeuVeiculo
+

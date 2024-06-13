@@ -1,0 +1,112 @@
+.conteudo {
+    padding: 0;
+}
+
+.title{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--vermelho-02);
+    font-weight: 600;
+    margin: 50px;
+}
+
+/* BANNER */
+.banner{
+    background-image: url(../../../public/imagens/Banner\ Financiamento.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 608px;
+}
+
+
+/* BANCOS PARCEIROS */
+.bancos_parceiros{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.icones_banco{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:  20px 20px 60px #b8b8b8,
+                -20px -20px 60px #fafafa;
+    margin-bottom: 60px;
+}
+
+
+.icone_banco{
+    width: 50%;
+}
+
+
+/* COMO FUNCIONA */
+.como_funciona{
+    background: var(--cinza);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content_como_funciona{
+    display: flex;
+    gap: 30px;
+}
+
+.conteudo_como_funciona{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.text_conteudo_como_funciona{
+    width: 200px;
+}
+
+.text_conteudo_como_funciona{
+    text-align: center;
+}
+
+.icone_como_funciona{
+    width: 50px;
+}
+
+.button_como_funciona{
+    width: 500px;
+    height: 50px;
+    margin: 20px 0 40px 0;
+    background: #ffffff;
+    gap: 30px;
+    font-weight: 500;
+    border-radius: 10px;
+    box-shadow:  20px 20px 40px #b8b8b8,
+                -20px -20px 30px #fafafa;
+}
+
+.logo_whatsapp_button{
+    width: 20px;
+    margin-right: 20px;
+}
+
+/* PERGUNTAS FREQUENTES */
+.perguntas_frequentes{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content_perguntas{
+    width: 80%;
+    background: var(--cinza);
+    padding: 20px;
+    border-radius: 15px;
+}

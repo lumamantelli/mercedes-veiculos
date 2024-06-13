@@ -7,9 +7,9 @@ import CodigoDc from "pages/CDC";
 import Lgpd from "pages/LGPD";
 import Cookies from "pages/Cookies";
 import Politica from "pages/Politica";
-import MeioPagamento from "pages/MeioPagamento";
 import VenderMeuVeiculo from "pages/VenderVeiculo";
 import QuemSomos from "pages/QuemSomos";
+import Financiamento from "pages/Finaciamento";
 
 const { BrowserRouter, Routes, Route } = require("react-router-dom");
 
@@ -25,7 +25,7 @@ function AppRoutes() {
         <Route path="LGPD" element={<Lgpd/>}/>
         <Route path="Cookies" element={<Cookies/>}/>
         <Route path="Politica" element={<Politica/>}/>
-        <Route path="MeioPagamento" element={<MeioPagamento/>}/>
+        <Route path="Financiamento" element={<Financiamento/>}/>
         <Route path="VenderMeuVeiculo" element={<VenderMeuVeiculo/>}/>
         <Route path="QuemSomos" element={<QuemSomos/>}/>
       </Routes>

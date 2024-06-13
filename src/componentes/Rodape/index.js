@@ -19,8 +19,8 @@ function Rodape() {
                         <RodapeLink>
                             Tabela FIPE
                         </RodapeLink>
-                        <RodapeLink url="/MeioPagamento">
-                            Meios de pagamento
+                        <RodapeLink url="/Financiamento">
+                            Financiamento
                         </RodapeLink>
                         <RodapeLink url="/VenderMeuVeiculo">
                             Vender meu veículo
