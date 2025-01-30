@@ -79,7 +79,7 @@ import './Formulario.css'
           </fieldset>
         </div>
         <fieldset>
-          <label htmlFor="message">Deixe uma mensagem</label>
+          <label htmlFor="message">Descreva o veículo e de qual cidade é.</label>
           <textarea
             name="message"
             value={message}

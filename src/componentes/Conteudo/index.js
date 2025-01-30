@@ -10,7 +10,7 @@ function Conteudo({ searchValue }) {
 
     useEffect(() => {
         api
-        .get("/") //com a api do typecode a rota é /veiculos
+        .get("/carros") //com a api do typecode a rota é /veiculos
        
           
             // Modelo anterior com api do type code
@@ -39,18 +39,18 @@ function Conteudo({ searchValue }) {
                 })} */}
                 {carros
                     .filter((carro) => {
-                        const titleNormalized = carro.modelo_car.toLowerCase()
+                        const titleNormalized = carro.modelo.toLowerCase()
                         const searchValueNormalized = searchValue.toLowerCase()
                         return titleNormalized.includes(searchValueNormalized)
                     })
 
                     .map((carro) => {
-                        return <Card {...carro} key={carro.id_car} />
+                        return <Card {...carro} key={carro.id} />
                 })}
             </div> 
             <button className='ver_mais'>
                 <h5 className='ver_mais_texto'>Ver mais</h5>
-                <img src='/imagens/seta.svg' alt='seta'/>
+                {/* <img src='/imagens/seta.svg' alt='seta'/> */}
             </button>
             <div className='whatsapp'>
                 <a target='blank' href='https://wa.me/5566996231390?text=Olá, vim do catálogo'>

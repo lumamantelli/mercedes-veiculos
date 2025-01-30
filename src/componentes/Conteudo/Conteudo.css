@@ -19,6 +19,10 @@
     gap:  10px;
 }
 
+.ver_mais:hover {
+    color: var(--vermelho-02);
+}
+
 .btn_whatsapp {
     align-items: center;
     background: green;

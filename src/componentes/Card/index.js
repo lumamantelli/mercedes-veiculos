@@ -46,9 +46,9 @@ import { Carousel, CarouselItem } from 'react-bootstrap'
 //     )
 // }
 
-function Card({id_car, modelo_car, ano_car, motor, tracao, cambio, preco, imagens }) {
+function Card({id, modelo, ano, motor, tracao, cambio, preco, imagens }) {
     return (
-        <a className='link_mais' href={`./${id_car}`}>
+        <a className='link_mais' href={`./${id}`}>
         <div className='card_content'>
             <Carousel className='card_fotos'>
                 <CarouselItem>
@@ -70,9 +70,9 @@ function Card({id_car, modelo_car, ano_car, motor, tracao, cambio, preco, imagen
 
             <div className='card_informacoes'>
                 <div className='nome_informacoes'>
-                    <h6 className='modelo'>{modelo_car}</h6>
+                    <h6 className='modelo'>{modelo}</h6>
                     <div className='info_card'>
-                        <p className='txt'>{ano_car}</p>
+                        <p className='txt'>{ano}</p>
                         <p className='txt'>{motor}</p>
                         <p className='txt'>{tracao}</p>
                         <p className='txt'>{cambio}</p>
