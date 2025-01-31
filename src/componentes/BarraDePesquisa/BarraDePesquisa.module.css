@@ -49,7 +49,6 @@ button {
 
 @media screen and (min-width: 430px) {
     .barra_de_pesquisa{
-        width: 50%;
         padding: 0 30px;
     }
 }
